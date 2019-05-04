@@ -51,4 +51,4 @@ function SKstringify(keyList, jsonObject, space){
 var complexContent = JSON.parse(require("fs").readFileSync(process.argv.splice(2)[0]));
 var output = SKstringify(sortKeys(complexContent), complexContent, 2);
 console.log(output);
-console.log("// debug: complexContent " + (arrayEquals(complexContent, JSON.parse(output)) ? "==" : "!=") + " output");
+// console.log("// debug: complexContent " + (arrayEquals(complexContent, JSON.parse(output)) ? "==" : "!=") + " output");
